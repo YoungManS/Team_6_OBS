@@ -12,8 +12,8 @@ app.config['DB_USER'] = ""
 app.config['DB_PASS'] = ""
 app.config['DB_NAME'] = ""
 
-engine = db.create_engine('mysql+pymysql://' + app.config['DB_USER'] + ':' + app.config['DB_PASS'] + '@' + app.config['DB_HOST'] + '/' + app.config['DB_NAME'], pool_pre_ping=True)
-//app.config['DB_CONN'] = engine.connect()
+#engine = db.create_engine('mysql+pymysql://' + app.config['DB_USER'] + ':' + app.config['DB_PASS'] + '@' + app.config['DB_HOST'] + '/' + app.config['DB_NAME'], pool_pre_ping=True)
+# app.config['DB_CONN'] = engine.connect()
 
 @app.route('/')
 def home():
